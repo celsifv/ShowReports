@@ -1,0 +1,64 @@
+/* Updated index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Table Styling */
+table {
+  @apply border-collapse border border-blue-300;
+}
+
+table th {
+  @apply bg-gray-800 text-white;
+}
+
+table td, th {
+  @apply px-4 py-2;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: linear-gradient(to bottom, #333, #111);
+  color: white;
+}
+.sidebar a {
+  color: white;
+  @apply hover:text-blue-400;
+}
+
+.sidebar a:hover {
+  background: #444;
+  color: #00b4d8;
+  border-radius: 4px;
+}
+
+/* Button Styling */
+button {
+  @apply bg-blue-600 text-white hover:bg-blue-800 transition;
+}
+
+/* Specific Updates */
+.email-button {
+  @apply bg-indigo-500 text-white hover:bg-indigo-700;
+}
+.report-button {
+  @apply bg-green-500 text-white hover:bg-green-700 flex items-center justify-center;
+}
+.report-button span {
+  margin-left: 8px;
+}
+
+/* Font Sizes */
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Modal Styling */
+.modal {
+  @apply bg-white p-6 rounded-lg shadow-xl;
+}
